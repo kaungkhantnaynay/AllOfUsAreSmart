@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body{
+  background: #f5f5f5;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: white;
+}
+
+.btn{
+  background: #fff;
+  color: #212121;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn img{
+  width: 20px;
+  margin-left: 10px;
+}
+
+.btn.dark-btn{
+  background: #212EA0;
+  color: #fff;
+}
+
+.navbar{
+  padding-left: 5%;
+  padding-right: 10%;
+  /* background-color: white; */
+}
+
+@media (max-width: 1200px) {
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn{
+    padding: 14px 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .btn{
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn{
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}

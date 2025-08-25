@@ -1,0 +1,26 @@
+.title{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 60px 0 30px;
+    
+}
+
+.title h2{
+    font-size: 32px;
+    margin-top: 5px;
+    text-transform: none;
+}
+
+@media (max-width: 1024px){
+    .title h2{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 600px){
+    .title h2{
+        font-size: 24px;
+    }
+}
