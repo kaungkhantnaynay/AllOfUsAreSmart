@@ -1,4 +1,4 @@
-nav{
+nav.navbar{
     width: 100%;
     color: #333;
     padding: 4px 0;
@@ -50,7 +50,8 @@ nav ul li{
     display: none;
 }
 
-@media (max-width: 1000px){
+
+@media (max-width: 1024px){
     .logo{
         margin-left: 20px;
     }
@@ -59,11 +60,11 @@ nav ul li{
     }
 }
 
-@media(max-width:840px) {
-    nav{
+@media(max-width: 768px) {
+    nav.navbar{
         padding: 15px 0;
     }
-    nav ul{
+    nav.navbar ul{
         position: fixed;
         top: 0;
         right: 0;
@@ -74,7 +75,10 @@ nav ul li{
         padding-top: 70px;
         transition: 0.5s;
     }
-    nav ul li{
+    nav.navbar ul.hide-mobile-menu{
+        right: -200px;
+    }
+    nav.navbar ul li{
         display: block;
         margin: 25px 40px;
     }
@@ -83,8 +87,5 @@ nav ul li{
         width: 30px;
         cursor: pointer;
         margin-right: 20px;
-    }
-    .hide-mobile-menu{
-        right: -200px;
     }
 }

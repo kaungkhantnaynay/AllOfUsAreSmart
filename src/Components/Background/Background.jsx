@@ -1,9 +1,11 @@
-import React from 'react'
 import './Background.css'
 import Darkarrow from '../../assets/dark-arrow.png'
+import { Link } from 'react-router-dom';
+
 const Background = () => {
   return (
-    <div className='background container'>
+    <div className='background'>
+      
       <div className='background-text'>
         <h1>AllOfUsAreSmart</h1>
         
@@ -11,7 +13,7 @@ const Background = () => {
           "Stay one step ahead with the latest trends in sneakers, boots and more. 
           Our collection is designed to elevate your wardrobe and express your individuality—one step at a time."
         </p>
-        <button className='btn'>Explore more <img src={Darkarrow} alt="" /></button>
+        <Link to ="/ShoesGallery" className='btn'>Explore more <img src={Darkarrow} alt="" /></Link>
       </div>
     </div>
   )

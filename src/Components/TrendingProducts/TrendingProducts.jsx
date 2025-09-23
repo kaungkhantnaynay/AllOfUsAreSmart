@@ -8,6 +8,7 @@ import NikeAir from "../../assets/Nike-AF1.jpeg";
 import PumaSpeedcat from "../../assets/Puma-Speedcat.jpg";
 import AllStarCanvas from "../../assets/Chuck-Taylor.jpg";
 import Whitearrow from '../../assets/white-arrow.png'
+import { Link } from 'react-router-dom';
 
 
 const products = [
@@ -72,9 +73,11 @@ function TrendingProducts() {
           
         ))}
       </Slider>
+      <Link to="/ShoesGallery">
       <div className='see-more-wrapper'>
       <button className="btn dark-btn">Shop now<img src={Whitearrow} alt="" /></button>
       </div>
+      </Link>
     </section>
     
   );

@@ -3,7 +3,7 @@
     min-height: 100vh;
     background: linear-gradient(rgba(12,11,10, 0.4),rgba(12,11,10, 0.4)),url('../../assets/Shoe Background.jpeg');
     background-size: contain;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position: center;
     color: #fff;
     display: flex;

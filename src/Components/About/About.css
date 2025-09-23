@@ -45,6 +45,7 @@
     color: #676767;
     margin-bottom: 15px;
     margin-top: 10px;
+    line-height: 2;
 }
 
 @media (max-width: 1024px){

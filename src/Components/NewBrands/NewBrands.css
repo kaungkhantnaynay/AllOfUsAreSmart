@@ -1,13 +1,12 @@
 .new_brands {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 250px 250px;
+  grid-template-rows: 200px 200px;
   grid-template-areas:
     "brand1 brand2 brand3"
     "brand1 brand4 brand5";
   gap: 20px;
   padding: 20px;
-  background-color: #e3e7ee;
 }
 
 .brand {
@@ -55,7 +54,7 @@
 @media (max-width: 768px) {
   .new_brands {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 200px);
+    grid-template-rows: repeat(5, 150px);
     grid-template-areas:
       "brand1"
       "brand2"
