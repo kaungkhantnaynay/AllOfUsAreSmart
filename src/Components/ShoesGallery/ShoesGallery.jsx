@@ -6,7 +6,7 @@ import NB530 from "../../assets/NewBalance-530-new.jpg";
 import NikeAir from "../../assets/Nike-AF1.jpeg";
 import PumaSpeedcat from "../../assets/Puma-Speedcat.jpg";
 import AllStarCanvas from "../../assets/Chuck-Taylor.jpg";
-import Supernova from "../../assets/Supernova.png"
+import Supernova from "../../assets/SuperNova.png"
 import NikeV2k from "../../assets/Nike_V2K.jpg"
 import PUMA_Shuffle from "../../assets/Puma-shuffle.jpg"
 
