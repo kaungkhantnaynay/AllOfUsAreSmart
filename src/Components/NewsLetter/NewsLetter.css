@@ -1,0 +1,182 @@
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 140px;
+  margin: auto;
+  flex-direction: column;
+  background: linear-gradient(
+    to left,
+    #e3dbd5,
+    #e7c3a7,
+    #e7aa7c,
+    #e59152,
+    #e07626
+  );
+  gap: 30px;
+  width: 85%;
+  min-height: 45vh;
+  border-radius: 30px;
+  margin-bottom: 80px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.newsletter.hovered {
+  transform: scale(0.95);
+}
+
+.newsletter p {
+  font-size: 22px;
+  color: #454545;
+  font-weight: 600;
+  text-align: center;
+}
+
+.newsletter div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 600px;
+  height: 60px;
+  border-radius: 80px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter input {
+  width: 500px;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  color: #616161;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.newsletter div button {
+  width: 210px;
+  height: 60px;
+  border-radius: 80px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.newsletter div button:hover {
+  background-color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .newsletter {
+    padding: 0 60px;
+    width: 90%;
+    min-height: 35vh;
+  }
+
+  .newsletter p {
+    font-size: 18px;
+  }
+
+  .newsletter div {
+    width: 500px;
+    height: 55px;
+  }
+
+  .newsletter input {
+    width: 340px;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .newsletter div button {
+    width: 140px;
+    height: 55px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    width: 95%;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    min-height: 30vh;
+    margin-bottom: 50px;
+  }
+
+  .newsletter p {
+    font-size: 16px;
+  }
+
+  .newsletter div {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    border-radius: 12px;
+    gap: 10px;
+  }
+
+  .newsletter input {
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+  }
+
+  .newsletter div button {
+    width: 100%;
+    height: 42px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    gap: 12px;
+  }
+
+  .newsletter p {
+    font-size: 14px;
+  }
+
+  .newsletter div {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .newsletter input {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .newsletter div button {
+    height: 38px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .newsletter p {
+    font-size: 12px;
+  }
+
+  .newsletter input,
+  .newsletter div button {
+    font-size: 10px;
+    height: 34px;
+  }
+}

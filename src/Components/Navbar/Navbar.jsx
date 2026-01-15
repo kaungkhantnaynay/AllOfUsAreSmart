@@ -50,7 +50,7 @@ const Navbar = () => {
 
       <ul ref={menuRef} className={mobileMenu ? '' : 'hide-mobile-menu'}>
         <li onClick={closeMenu}>
-          <ScrollLink to='background' smooth={true} offset={0} duration={500}>
+          <ScrollLink to='hero' smooth={true} offset={0} duration={500}>
             Home
           </ScrollLink>
         </li>

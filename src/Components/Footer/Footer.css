@@ -10,27 +10,27 @@
 }
 
 .footer-logo {
-    width: 60px; /* Adjust as needed */
+    width: 60px; 
     height: auto;
-    filter: invert(1); /* Invert the logo color to white for visibility on dark background */
+    filter: invert(1);
 }
 
 .footer-logo-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between logo and title */
+    gap: 30px;
 }
 
 .footer-logo-container h4 {
-    font-size: 1.5em; /* Adjust as needed */
-    color: white; /* Match footer text color */
-    margin: 0; /* Remove default margin */
+    font-size: 1.5em; 
+    color: white; 
+    margin: 0;
 }
 
 .footer-line {
     border: none;
     height: 1px;
-    background-color: #444; /* A lighter color for the line */
+    background-color: #444;
     margin: 20px 0;
 }
 
@@ -38,7 +38,8 @@
     display: flex;
     justify-content: space-around;
     gap: 40px;
-    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .footer-column {
@@ -64,27 +65,27 @@
 }
 
 .footer-column li a {
-    color: #a0a0a0; /* Lighter gray for link text */
+    color: #a0a0a0;
     text-decoration: none;
     font-size: 0.9em;
     transition: color 0.2s ease-in-out;
 }
 
 .footer-column li a:hover {
-    color: #fff; /* White on hover */
+    color: #fff;
 }
 
 .social-icons img {
-    width: 30px; /* Adjust as needed */
-    height: 30px; /* Adjust as needed */
-    margin: 0 5px; /* Add some spacing between icons */
+    width: 30px; 
+    height: 30px; 
+    margin: 0 5px; 
 }
 
 .footer-copyright {
     text-align: center;
     margin-top: 20px;
     font-size: 0.9em;
-    color: #a0a0a0; /* Match other footer text color */
+    color: #a0a0a0;
 }
 
 @media (max-width: 768px) {

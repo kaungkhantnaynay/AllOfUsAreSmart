@@ -1,14 +1,12 @@
 import React from 'react'
 import './About.css'
-import about_us from '../../assets/about-us.jpg'
-// import about_us_2 from '../../assets/about-us-2.jpg'
+import about_img from '../../assets/about-img.jpg'
 
 function About() {
   return (
     <div className='about'>
         <div className="about-left">
-            <img src={about_us} alt="" className='about-img-1'/>
-            {/* <img src={about_us_2} alt="" className='about-img-2'/> */}
+            <img src={about_img} alt="" className='about-img-1'/>
         </div>
 
         <div className="about-right">

@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import './TrendingProducts.css';
 import { FaHeart, FaStar, FaShoppingCart } from 'react-icons/fa';
 import AdidasSamba from "../../assets/Adidas-Samba.jpg";
-import NB530 from "../../assets/NewBalance-530.jpg";
+import NB530 from "../../assets/NewBalance-530-new.jpg";
 import NikeAir from "../../assets/Nike-AF1.jpeg";
 import PumaSpeedcat from "../../assets/Puma-Speedcat.jpg";
 import AllStarCanvas from "../../assets/Chuck-Taylor.jpg";

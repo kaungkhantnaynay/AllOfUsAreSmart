@@ -17,6 +17,7 @@
     padding: 10px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
   }
 
 .shoe-card:hover {
@@ -25,8 +26,11 @@
 }
   
   .shoe-card img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
     border-radius: 8px;
   }
 
@@ -87,5 +91,35 @@
   font-size: 20px;
   color: #ff5e00;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .shoes-gallery h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .shoes-gallery {
+    padding: 15px;
+  }
+
+  .shoes-gallery h1 {
+    font-size: 20px;
+  }
+
+  .shoe-card {
+    padding: 8px;
+  }
 }
   
