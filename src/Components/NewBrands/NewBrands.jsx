@@ -12,32 +12,32 @@ import { Slide } from "react-awesome-reveal";
 function NewBrands() {
   return (
     <Slide duration={2000}>
-      <div>
+      <div className='new-brands-wrapper'>
         <Title subTitle='Our Brands' title='Brands We Offer' />
         <div className='new_brands'>
-            <div className='brand' data-label="ADIDAS">
-                        <img src={new_brand1} alt="Adidas" />
-                    </div>
-                    <div className='brand' data-label="NEW BALANCE">
-                        <img src={new_brand2} alt="New Balance" />
-                        
-                    </div>
-                    <div className='brand' data-label="NIKE">
-                        <img src={new_brand3} alt="Nike" />
-                        
-                    </div>
-                    <div className='brand' data-label="PUMA">
-                        <img src={new_brand4} alt="Puma" />
-                        
-                    </div>
-                    <div className='brand' data-label="CONVERSE">
-                        <img src={new_brand5} alt="Converse" />
-                        
-                    </div>
-                    <div className='brand' data-label="SKECHERS">
-                        <img src={new_brand6} alt="Skechers" />
-                        
-                    </div>
+          <div className='brand' data-label="ADIDAS">
+            <img src={new_brand1} alt="Adidas" />
+          </div>
+          <div className='brand' data-label="NEW BALANCE">
+            <img src={new_brand2} alt="New Balance" />
+
+          </div>
+          <div className='brand' data-label="NIKE">
+            <img src={new_brand3} alt="Nike" />
+
+          </div>
+          <div className='brand' data-label="PUMA">
+            <img src={new_brand4} alt="Puma" />
+
+          </div>
+          <div className='brand' data-label="CONVERSE">
+            <img src={new_brand5} alt="Converse" />
+
+          </div>
+          <div className='brand' data-label="SKECHERS">
+            <img src={new_brand6} alt="Skechers" />
+
+          </div>
         </div>
       </div>
     </Slide>

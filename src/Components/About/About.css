@@ -4,6 +4,8 @@
   justify-content: center;
   width: 100%;
   padding: 80px 10%;
+  background: transparent;
+  position: relative;
 }
 
 .about-left{

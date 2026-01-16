@@ -1,3 +1,9 @@
+.new-brands-wrapper {
+  background: transparent;
+  padding: 60px 20px;
+  position: relative;
+}
+
 .new_brands {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -7,6 +13,8 @@
     "brand1 brand4 brand5";
   gap: 20px;
   padding: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .brand {

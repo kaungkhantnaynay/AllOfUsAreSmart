@@ -1,7 +1,7 @@
 .shoes-gallery {
     padding: 20px;
     text-align: center;
-    background-color: #F5FBFF;
+    background: transparent;
   }
   
   .gallery-container {
@@ -51,6 +51,38 @@
   color: #f66;
   font-size: 24px;
   cursor: pointer;
+  z-index: 2;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff4500 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(255, 69, 0, 0.4);
+  z-index: 2;
+}
+
+.out-of-stock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  z-index: 3;
 }
 
 .card-bottom {
@@ -74,6 +106,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.original-price {
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.current-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6b35;
+  margin: 0;
 }
 
 .price-cart p {
@@ -93,6 +146,17 @@
   cursor: pointer;
 }
 
+.error-message {
+  text-align: center;
+  padding: 40px 20px;
+  color: #d32f2f;
+  font-size: 16px;
+}
+
+.error-message p {
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .gallery-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -101,6 +165,19 @@
 
   .shoes-gallery h1 {
     font-size: 24px;
+  }
+  
+  .discount-badge {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  
+  .out-of-stock-overlay {
+    font-size: 16px;
+  }
+  
+  .current-price {
+    font-size: 16px;
   }
 }
 
@@ -121,5 +198,21 @@
   .shoe-card {
     padding: 8px;
   }
-}
   
+  .discount-badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  
+  .out-of-stock-overlay {
+    font-size: 14px;
+  }
+  
+  .original-price {
+    font-size: 11px;
+  }
+  
+  .current-price {
+    font-size: 14px;
+  }
+}

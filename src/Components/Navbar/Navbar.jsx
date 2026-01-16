@@ -1,14 +1,19 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Navbar.css';
 import { Link as ScrollLink } from 'react-scroll';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import sneakerLogo from '../../assets/sneakers.png';
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import { useCart } from '../CartContext';
 
 const Navbar = () => {
+  const { getCartCount } = useCart();
   const [sticky, setSticky] = useState(false);
   const menuRef = useRef();
   const [mobileMenu, setMobileMenu] = useState(false);
+  const location = useLocation();
+
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,41 +46,43 @@ const Navbar = () => {
     setMobileMenu(false);
   }
 
+  // Helper function to render navigation links
+  const NavLink = ({ to, label, offset = 0 }) => {
+    if (isHomePage) {
+      return (
+        <ScrollLink to={to} smooth={true} offset={offset} duration={500} onClick={closeMenu}>
+          {label}
+        </ScrollLink>
+      );
+    }
+    return (
+      <Link to="/" state={{ scrollTo: to, offset: offset }} onClick={closeMenu}>
+        {label}
+      </Link>
+    );
+  };
+
   return (
     <nav className={`navbar ${sticky ? 'dark-nav' : ''}`}>
-      <div className='logo'>
+      <Link to="/" className='logo' onClick={closeMenu}>
         <img src={sneakerLogo} alt='Sneaker Logo' />
         <span>AllOfUsAreSmart</span>
-      </div>
+      </Link>
 
       <ul ref={menuRef} className={mobileMenu ? '' : 'hide-mobile-menu'}>
+        <li><NavLink to='hero' label='Home' /></li>
+        <li><NavLink to='trending-section' label='Shop' offset={-130} /></li>
+        <li><NavLink to='about' label='About us' offset={-180} /></li>
+        <li><NavLink to='map-container' label='Location' offset={-190} /></li>
+        <li><NavLink to='contact' label='Contact us' offset={-100} /></li>
         <li onClick={closeMenu}>
-          <ScrollLink to='hero' smooth={true} offset={0} duration={500}>
-            Home
-          </ScrollLink>
-        </li>
-        <li onClick={closeMenu}>
-          <ScrollLink to='trending-section' smooth={true} offset={-130} duration={500}>
-            Shop
-          </ScrollLink>
-        </li>
-        <li onClick={closeMenu}>
-          <ScrollLink to='about' smooth={true} offset={-180} duration={500}>
-            About us
-          </ScrollLink>
-        </li>
-        <li onClick={closeMenu}>
-          <ScrollLink to='map-container' smooth={true} offset={-190} duration={500}>
-            Location
-          </ScrollLink>
-        </li>
-        <li onClick={closeMenu}>
-          <ScrollLink to='contact' smooth={true} offset={-100} duration={500}>
-            Contact us
-          </ScrollLink>
-        </li>
-        <li onClick={closeMenu}>
-          <Link to='/cart'><FaShoppingCart />Cart</Link>
+          <Link to='/cart' className="cart-link">
+            <div className="cart-icon-container">
+              <FaShoppingCart />
+              {getCartCount() > 0 && <span className="cart-badge">{getCartCount()}</span>}
+            </div>
+            Cart
+          </Link>
         </li>
         <li onClick={closeMenu}>
           <Link to='/login'><FaUser /> Login</Link>

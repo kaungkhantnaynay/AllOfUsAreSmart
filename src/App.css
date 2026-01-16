@@ -1,0 +1,19 @@
+/* Global app background to eliminate white spaces */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, 
+    #fff5f0 0%, 
+    #ffe8d6 15%, 
+    #fef5e7 30%, 
+    #e8f4f8 50%, 
+    #fff0f5 65%,
+    #e6f0ff 80%,
+    #fff5e6 100%
+  );
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}

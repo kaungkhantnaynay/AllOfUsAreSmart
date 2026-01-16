@@ -8,16 +8,16 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div className='hero' id='hero'>
       <div className="hero-left">
-            <div className="hero-left-icon">
-                <h2 className="masked-text">Stay one step ahead</h2>
-                <img src={check_mark} alt="" />
-            </div>
-            <p>with the latest trends in sneakers</p>
-            <div>
-                <Link to="/ShoesGallery"><button>Latest Collection<img src={white_arrow} alt="" /></button></Link>
-            </div>
+        <div className="hero-left-icon">
+          <h2 className="masked-text">Stay one step ahead</h2>
+          <img src={check_mark} alt="" />
+        </div>
+        <p>with the latest trends in sneakers</p>
+        <div>
+          <Link to="/ShoesGallery"><button>Latest Collection<img src={white_arrow} alt="" /></button></Link>
+        </div>
       </div>
 
     </div>
